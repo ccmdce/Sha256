@@ -159,7 +159,7 @@ class Develop {
 
 	private short[][] sector (short[] region) {
 	
-		int length = (region.length) / 64;
+		int length = (int) (region.length * 0.015625);
 		
 		short[][] section = new short[length][64];
 
